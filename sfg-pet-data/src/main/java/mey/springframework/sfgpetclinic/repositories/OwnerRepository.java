@@ -1,0 +1,9 @@
+package mey.springframework.sfgpetclinic.repositories;
+
+import mey.springframework.sfgpetclinic.model.Owner;
+import org.springframework.data.repository.CrudRepository;
+
+public interface OwnerRepository extends CrudRepository<Owner, Long> {
+
+    Owner findByLastName (String lastName);
+}
